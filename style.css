@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    --lightGray: #edf0f1;
+    --darkGray: #585858;
+    --charcoal: #24252a;
+    --beige: #cbcbba;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--charcoal);
+  color: var(--beige);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 10% auto 0 auto;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.container:before {
+  content: "Arthur Dao";
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+  width: 100vw;
+}
+
+.header, #content {
+  background-color: var(--darkGray);
+  padding: 40px;
+  margin: 15px 10px 0 10px;
+  border-radius: 10px;
+}
+
+#content {
+  padding-top: 0;
+}
+
+.hits {
+  font-size: 5.75em;
+}
+
+#textbox {
+  min-height: 100px;
+  width: 100%;
+  resize: vertical;
+  background-color: var(--charcoal);
+  color: var(--beige);
+  font-size: 15px;
+}
